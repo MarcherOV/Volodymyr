@@ -4,6 +4,6 @@ import datetime
 
 def home(request):
     date = datetime.datetime.now().date()
-    name='Vova'
-    _context = {'date' : date, 'name' : name}
+    name = 'Vova'
+    _context = {'date': date, 'name': name}
     return render(request, 'home.html', _context)
